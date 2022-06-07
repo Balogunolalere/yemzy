@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>{% block title %}
+
+        {% endblock title %}</title>
+
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>Yemzy Store</strong></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Request a quote</a></li>
+                <li><a href="#" role="button" class="outline contrast">Browse Products</a></li>
+            </ul>
+        </nav>
+
+        <header class="container" style="margin-top: 100px;">
+
+            <div class="grid">
+                <div>
+                    <hgroup>
+                        <h1>Yemzy Store</h1>
+                        <h2>
+                            <blockquote>
+                                We are a small company that sells everything you need to make your life easier.
+                            </blockquote>
+                        </h2>
+
+                    </hgroup>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/noiro/image/upload/v1653037174/yemzy%20project/image-removebg-preview_w14b5y.png" height="300px" width="300px%" alt="">
+                </div>
+            </div>
+            
+        </header>
+    </div>
+    <main class="container"> 
+        <section>
+
+        </section>
+    </main>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+
+</html>
